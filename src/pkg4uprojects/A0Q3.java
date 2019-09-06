@@ -21,8 +21,7 @@ public class A0Q3 {
         Scanner input = new Scanner(System.in);
         
         //create array
-        double expenses[] = new double[6];
-        expenses[5] = 0;
+        double expenses[] = new double[5];
         
         //ask for the numbers in a loop
         for(int i = 0; i < 5; i++){
@@ -30,12 +29,17 @@ public class A0Q3 {
             expenses[i] = input.nextInt();
         }
         
-        //calculate and state the total
+        //calculate the total expenses
         double sum = 0;
-        for (int j = 0; j < 5; j++) {
-            sum = expenses[j] + expenses[j+1];
+        for (int i = 0; i < expenses.length; i++) {
+            sum = sum + expenses[i];
         }
+        //state the total
         System.out.println("The total of all expenses is " + sum);
+        
+        //find and state how many tickets you need
+        double tickets = Math.ceil(sum / 35);
+        System.out.println("You need to sell " + tickets + " tickets.");
     }
     
 }

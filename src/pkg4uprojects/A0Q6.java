@@ -35,7 +35,7 @@ public class A0Q6 {
         do{
             System.out.println(hundred);
             hundred = hundred - 5;
-        }while(hundred > number);
+        }while(hundred >= number);
     }
     
 }

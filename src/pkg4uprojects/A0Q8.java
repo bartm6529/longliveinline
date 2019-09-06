@@ -20,39 +20,23 @@ public class A0Q8 {
         //input scanner
         Scanner input = new Scanner(System.in);
         
-        //create tracker for how many years
-        int year1 = 0;
-        int year2 = 0;
-        
-        //ask for a balance and interest rate
+        //ask for balance
         System.out.println("Please enter a balance.");
-        double initialBalance = input.nextInt();
-        double balance = initialBalance;
-        System.out.println("Please enter an interest rate.");
-        double interest = input.nextInt();
+        double initialBalance = input.nextDouble();
+        double endBalance = 0;
+        double interest;
+        int year = 0;
         
-        //calculate years until it doubles
+        //ask for interest rate
+        System.out.println("Please enter an interest rate in decimal form");
+        interest = input.nextDouble();
+        
         do{
-            //add interest rate to balance
-            initialBalance = initialBalance + ((initialBalance * interest) / 100);
-            //add to year
-            year1 ++;
-        }while(initialBalance < (initialBalance * 2));
+            endBalance = (1 + interest) * initialBalance;
+            year++;
+        }while(endBalance <= (initialBalance * 2));
         
-        //say how many years until it doubles
-        System.out.println("It will take " + year1 + "for the balance to double.");
-        
-        //calculate years until balance reaches a million dolars
-        do{
-            //add interest rate to balance
-            balance = balance + ((balance * interest) / 100);
-            //add to year
-            year2 ++;
-        }while(balance < 1000000);
-        
-        //say how many years until it reaches 1 million
-        System.out.println("It will take " + year2 + "for the balance to reach 1 million.");
-        
+        System.out.println(year);
     }
     
 }

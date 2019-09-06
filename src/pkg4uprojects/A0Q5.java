@@ -21,7 +21,7 @@ public class A0Q5 {
         Scanner input = new Scanner(System.in);
         
         //ask for a number
-        System.out.println("Please enter a number");
+        System.out.println("Please enter a number between 1 and 10.");
         int number = input.nextInt();
         
         //check if between 1 and 10

@@ -20,16 +20,16 @@ public class A0Q3 {
         //input scanner
         Scanner input = new Scanner(System.in);
         
-        //create array
+        //create array to store expenses
         double expenses[] = new double[5];
         
-        //ask for the numbers in a loop
+        //ask for the expenses in a loop and store them in the array
         for(int i = 0; i < 5; i++){
             System.out.println("Enter an expense");
-            expenses[i] = input.nextInt();
+            expenses[i] = input.nextDouble();
         }
         
-        //calculate the total expenses
+        //calculate the total expenses by adding together
         double sum = 0;
         for (int i = 0; i < expenses.length; i++) {
             sum = sum + expenses[i];

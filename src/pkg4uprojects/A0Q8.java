@@ -20,23 +20,35 @@ public class A0Q8 {
         //input scanner
         Scanner input = new Scanner(System.in);
         
-        //ask for balance
+        //ask for balance, create starting and ending variables
         System.out.println("Please enter a balance.");
-        double initialBalance = input.nextDouble();
-        double endBalance = 0;
-        double interest;
+        double startingBalance = input.nextDouble();
+        double endBalance = startingBalance;
+        //ask for interest rate
+        System.out.println("Enter an interest rate");
+        double rate = input.nextDouble();
+        //year starts at 0
         int year = 0;
         
-        //ask for interest rate
-        System.out.println("Please enter an interest rate in decimal form");
-        interest = input.nextDouble();
-        
-        do{
-            endBalance = (1 + interest) * initialBalance;
+        //until the end balance is double the starting balance...
+        while(endBalance <= (startingBalance * 2)){
+            //calculate the new end balance
+            endBalance = (1 + rate) * endBalance;
+            //add to year
             year++;
-        }while(endBalance <= (initialBalance * 2));
+        }
+        //tell them how long it will take
+        System.out.println("It will take " + year + " years for the balance to double.");
         
-        System.out.println(year);
+        //until the end balance is one million dollars
+        while(endBalance <= 1000000){
+            //calculate the new end balance
+            endBalance = (1 + rate) * endBalance;
+            //add to year
+            year++;
+        }
+        //tell them how long it will take
+        System.out.println("It will take " + year + " years for the balance to reach a million.");
     }
     
 }

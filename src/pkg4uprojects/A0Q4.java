@@ -17,7 +17,7 @@ public class A0Q4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //input scanner
+        //input a scanner
         Scanner input = new Scanner(System.in);
         
         //ask for a number
@@ -33,7 +33,7 @@ public class A0Q4 {
         //make a space
         System.out.println("");
         
-        //loop that prints asterisks
+        //print the asteriks in a line, repeating for the length of the inputted number
         for (int i = 0; i < number; i++) {
             System.out.print("*"); 
         }

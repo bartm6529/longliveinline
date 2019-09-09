@@ -17,7 +17,7 @@ public class A0Q1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //input scanner
+        //create scanner
         Scanner input = new Scanner(System.in);
         
         //ask for name

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pkg4uprojects;
+package pkg4uprojects.A0;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author bartm6529
  */
-public class A0Q5 {
+public class A0Q4 {
 
     /**
      * @param args the command line arguments
@@ -29,15 +29,13 @@ public class A0Q5 {
             System.out.println("Try again. Please enter a number BETWEEN 1 and 10.");
             number = input.nextInt();
         }
-
-        //loop that repeats to create rows
+        
+        //make a space
+        System.out.println("");
+        
+        //print the asteriks in a line, repeating for the length of the inputted number
         for (int i = 0; i < number; i++) {
-            //loop that prints astriks to create lines
-            for (int j = 0; j < number; j++) {
-              System.out.print("*");   
-            }
-            //make a space
-            System.out.println("");
+            System.out.print("*"); 
         }
     }
     

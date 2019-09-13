@@ -16,17 +16,28 @@ public class A1Q4 {
         //if there is nothing left, return 0 (base case)
         if(n % 10 == 0){
             return 0;
-        //recursive call
+        }
+        //if there's a 7 in the integer
+        if(n % 10 == 7){
+            //take one digit off the int and add one to count7
+            return count7(n/10) + 1;
+        //if there's no 7
         }else{
-            //take one digit off the int. If the int is 7, add it
-            
+            //take one off the int, add nothing
+            return count7(n/10);
         }
     }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //test code
+        int sevenOneSeven = count7(717);
+        System.out.println(sevenOneSeven);
+        int seven = count7(7);
+        System.out.println(seven);
+        int oneTwoThree = count7(123);
+        System.out.println(oneTwoThree);
     }
     
 }

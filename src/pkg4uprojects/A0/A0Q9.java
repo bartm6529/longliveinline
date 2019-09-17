@@ -19,7 +19,7 @@ public class A0Q9 {
     public static void main(String[] args) {
         //input a scanner
         Scanner input = new Scanner(System.in);
-        
+
         //ask for a word
         System.out.println("Please enter a word");
         String word = input.nextLine();
@@ -27,15 +27,15 @@ public class A0Q9 {
         int wordLength = word.length();
         //create count variable
         int count = 0;
-        
+
         //repeat loop for as many letters in the word
         for (int i = 0; i < wordLength; i++) {
             //add to letter count
             count++;
         }
-        
+
         //tell user how long the word is
         System.out.println("There are " + count + " letters in this word.");
     }
-    
+
 }

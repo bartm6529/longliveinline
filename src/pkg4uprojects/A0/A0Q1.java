@@ -19,13 +19,13 @@ public class A0Q1 {
     public static void main(String[] args) {
         //create scanner
         Scanner input = new Scanner(System.in);
-        
+
         //ask for name
         System.out.println("What is your name?");
         String name = input.nextLine();
-        
+
         //tell them their name
         System.out.println("Hello " + name + "!");
     }
-    
+
 }

@@ -11,16 +11,23 @@ package pkg4uprojects.A1;
  */
 public class A1Q5 {
 
-    public static String changeXY(String s){
+    public static String changeXY(String s) {
         //If there's no X characters, return original string (base case)
-        if(!s.contains("x")){
-            return s;  
+        if (!s.contains("x")) {
+            return s;
         }
-        
-        
-        
+        //if the first character is x...
+        if (s.charAt(0) == 'x') {
+            //add y to the start of the new word, then add the rest of the old word
+            return 'y' + changeXY(s.substring(1));
+            //if the first character is not x...
+        } else {
+            //return said character plus the rest of the old word
+            return s.charAt(0) + changeXY(s.substring(1));
+        }
+
     }
-    
+
     /**
      * @param args the command line arguments
      */
@@ -33,5 +40,5 @@ public class A1Q5 {
         String xhixhix = changeXY("xhixhix");
         System.out.println(xhixhix);
     }
-    
+
 }

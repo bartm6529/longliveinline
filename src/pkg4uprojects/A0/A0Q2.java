@@ -19,10 +19,10 @@ public class A0Q2 {
     public static void main(String[] args) {
         //input a scanner
         Scanner input = new Scanner(System.in);
-        
+
         //create array to store the consecutive numbers
         int threeNums[] = new int[3];
-        
+
         //ask for first number
         System.out.println("Please input an integer");
         threeNums[0] = input.nextInt();
@@ -33,10 +33,10 @@ public class A0Q2 {
         //find and state the product of the numbers
         int productNums = threeNums[0] * threeNums[1] * threeNums[2];
         System.out.println("The product of " + threeNums[0] + ", " + threeNums[1] + " and " + threeNums[2] + " is " + productNums);
-        
+
         //find and state the square root of the product
         double squareProd = Math.sqrt(productNums);
         System.out.println("The square root of the product is " + squareProd);
     }
-    
+
 }

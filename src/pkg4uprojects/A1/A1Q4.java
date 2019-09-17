@@ -12,21 +12,22 @@ package pkg4uprojects.A1;
 public class A1Q4 {
 
     //method that counts sevens
-    public static int count7(int n){
+    public static int count7(int n) {
         //if there is nothing left, return 0 (base case)
-        if(n % 10 == 0){
+        if (n % 10 == 0) {
             return 0;
         }
         //if there's a 7 in the integer
-        if(n % 10 == 7){
+        if (n % 10 == 7) {
             //take one digit off the int and add one to count7
-            return count7(n/10) + 1;
-        //if there's no 7
-        }else{
+            return count7(n / 10) + 1;
+            //if there's no 7
+        } else {
             //take one off the int, add nothing
-            return count7(n/10);
+            return count7(n / 10);
         }
     }
+
     /**
      * @param args the command line arguments
      */
@@ -39,5 +40,5 @@ public class A1Q4 {
         int oneTwoThree = count7(123);
         System.out.println(oneTwoThree);
     }
-    
+
 }

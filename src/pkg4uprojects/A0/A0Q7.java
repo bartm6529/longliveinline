@@ -20,17 +20,17 @@ public class A0Q7 {
         //create variable for population and year
         double population = 6;
         int year = 1999;
-        
+
         //repeat until the population exceeds 10 billion, (or 10)
-        do{
+        do {
             //what's 1.4% of the population? Add it to the last years population
             population = population + ((population * 1.4) / 100);
             //add to year
-            year ++;
-        }while(population < 10);
-        
+            year++;
+        } while (population < 10);
+
         //tell user what year it will be...
         System.out.println("It will be " + year + " when the population exceeds 10 billion");
     }
-    
+
 }

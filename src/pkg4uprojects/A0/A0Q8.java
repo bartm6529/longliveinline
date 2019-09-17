@@ -19,7 +19,7 @@ public class A0Q8 {
     public static void main(String[] args) {
         //input scanner
         Scanner input = new Scanner(System.in);
-        
+
         //ask for balance, create starting and ending variables
         System.out.println("Please enter a balance.");
         double startingBalance = input.nextDouble();
@@ -29,9 +29,9 @@ public class A0Q8 {
         double rate = input.nextDouble();
         //year starts at 0
         int year = 0;
-        
+
         //until the end balance is double the starting balance...
-        while(endBalance <= (startingBalance * 2)){
+        while (endBalance <= (startingBalance * 2)) {
             //calculate the new end balance
             endBalance = (1 + rate) * endBalance;
             //add to year
@@ -39,9 +39,9 @@ public class A0Q8 {
         }
         //tell them how long it will take
         System.out.println("It will take " + year + " years for the balance to double.");
-        
+
         //until the end balance is one million dollars
-        while(endBalance <= 1000000){
+        while (endBalance <= 1000000) {
             //calculate the new end balance
             endBalance = (1 + rate) * endBalance;
             //add to year
@@ -50,5 +50,5 @@ public class A0Q8 {
         //tell them how long it will take
         System.out.println("It will take " + year + " years for the balance to reach a million.");
     }
-    
+
 }

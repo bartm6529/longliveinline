@@ -19,24 +19,24 @@ public class A0Q4 {
     public static void main(String[] args) {
         //input a scanner
         Scanner input = new Scanner(System.in);
-        
+
         //ask for a number
         System.out.println("Please enter a number between 1 and 10.");
         int number = input.nextInt();
-        
+
         //check if between 1 and 10
-        while(number < 1 || number > 10){
+        while (number < 1 || number > 10) {
             System.out.println("Try again. Please enter a number BETWEEN 1 and 10.");
             number = input.nextInt();
         }
-        
+
         //make a space
         System.out.println("");
-        
+
         //print the asteriks in a line, repeating for the length of the inputted number
         for (int i = 0; i < number; i++) {
-            System.out.print("*"); 
+            System.out.print("*");
         }
     }
-    
+
 }

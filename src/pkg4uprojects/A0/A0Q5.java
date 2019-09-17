@@ -19,13 +19,13 @@ public class A0Q5 {
     public static void main(String[] args) {
         //input a scanner
         Scanner input = new Scanner(System.in);
-        
+
         //ask for a number
         System.out.println("Please enter a number between 1 and 10.");
         int number = input.nextInt();
-        
+
         //check if between 1 and 10
-        while(number < 1 || number > 10){
+        while (number < 1 || number > 10) {
             System.out.println("Try again. Please enter a number BETWEEN 1 and 10.");
             number = input.nextInt();
         }
@@ -34,11 +34,11 @@ public class A0Q5 {
         for (int i = 0; i < number; i++) {
             //loop that prints astriks to create lines
             for (int j = 0; j < number; j++) {
-              System.out.print("*");   
+                System.out.print("*");
             }
             //make a space
             System.out.println("");
         }
     }
-    
+
 }

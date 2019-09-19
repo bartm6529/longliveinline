@@ -12,20 +12,19 @@ package pkg4uprojects.A1;
 public class A1Q11 {
     
     public static String stringClean(String s){
-        //if the string is one character long (base case)
-        if(s.length() == 0){
+        //Return original string if there's less than two characters (base case)
+        if(s.length() < 2){
             return s;
         }
-        
-        //if the first character is the same as the second...
-        if(s.charAt(0) == s.charAt(1)){
-            //get rid of the first character
-            return stringClean(s.substring(1));
-            //if they are different
+        //if the two first characters are different
+        if(s.charAt(0) != s.charAt(1)){
+            //return the original string, moving one character over
+            return s.charAt(0) + stringClean(s.substring(1));
+            //if not
         } else {
-            //return the first character, add the rest of the word
-            return s.charAt(0+1) + stringClean(s.substring(2));
-        }   
+            //return a new string, getting rid of the first character
+            return stringClean(s.substring(1));
+        } 
     }
     
     
@@ -36,6 +35,14 @@ public class A1Q11 {
         //test the code
         String yyzzza = stringClean("yyzzza");
         System.out.println(yyzzza);
+        
+        String abbbcdd = stringClean("abbbcdd");
+        System.out.println(abbbcdd);
+        
+        String hello = stringClean("Hello");
+        System.out.println(hello);
+ 
+
 
     }
     

@@ -12,7 +12,8 @@ package pkg4uprojects.A1;
 public class A1Q5 {
 
     public static String changeXY(String s) {
-        //If there's no X characters, return original string (base case)
+        //base case
+        //if there's no X characters, return original string
         if (!s.contains("x")) {
             return s;
         }

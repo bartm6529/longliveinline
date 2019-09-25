@@ -13,7 +13,8 @@ public class A1Q3 {
 
     //method to find sum of digits
     public static int sumDigits(int n) {
-        //if there is nothing left, return 0 (base case)
+        //base case
+        //if there is nothing left, return 0
         if (n % 10 == 0) {
             return 0;
             //recursive call    

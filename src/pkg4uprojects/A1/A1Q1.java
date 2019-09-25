@@ -13,7 +13,8 @@ public class A1Q1 {
 
     //method to find number of bunny ears
     public static int bunnyEars(int n) {
-        //the 0th bunny (base case)
+        //base case
+        //the 0th bunny is 0
         if (n == 0) {
             return 0;
         }

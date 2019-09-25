@@ -13,7 +13,8 @@ public class A1Q4 {
 
     //method that counts sevens
     public static int count7(int n) {
-        //if there is nothing left, return 0 (base case)
+        //base case
+        //if there is nothing left, return 0 
         if (n % 10 == 0) {
             return 0;
         }

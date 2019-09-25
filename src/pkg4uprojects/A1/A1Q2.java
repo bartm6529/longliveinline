@@ -13,7 +13,8 @@ public class A1Q2 {
 
     //Method to find the number of blocks in a row
     public static int triangle(int n) {
-        //the 1st row (base case)
+        //base case
+        //the 1st row is 0
         if (n == 0) {
             return 0;
         }

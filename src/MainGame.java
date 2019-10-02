@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+
 /**
  *
  * @author lamon
@@ -14,7 +15,8 @@ public class MainGame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        PlayGame game = new PlayGame();
+        game.playGame();
     }
     
 }

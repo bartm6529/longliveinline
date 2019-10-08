@@ -27,7 +27,7 @@ public class RecursionTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //test the code!
+        //test the code
         String techie = "Techie";
         System.out.println(reverse(techie));
         String marley = "Marley";

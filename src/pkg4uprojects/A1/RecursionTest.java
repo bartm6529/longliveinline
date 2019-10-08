@@ -5,6 +5,8 @@
  */
 package pkg4uprojects.A1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author marley
@@ -27,10 +29,18 @@ public class RecursionTest {
      */
     public static void main(String[] args) {
         //test the code
+        Scanner input = new Scanner(System.in);
+        
+        //premade test
         String techie = "Techie";
         System.out.println(reverse(techie));
         String marley = "Marley";
         System.out.println(reverse(marley));
+        
+        //make your own reversed string
+        System.out.println("Enter a sentence...");
+        String sentence = input.nextLine();
+        System.out.println(reverse(sentence));
     }
 
 }

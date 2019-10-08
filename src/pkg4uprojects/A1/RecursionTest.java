@@ -13,12 +13,11 @@ public class RecursionTest {
 
     public static String reverse(String s) {
         //base case
-        //if the stinrg is one character long
+        //if the string is one character long
         if (s.length() <= 1) {
             //return said string
             return s;
         }
-        
         //add the last letter to the start, then add the rest of the word
         return s.charAt(s.length() - 1) + reverse(s.substring(0, s.length() - 1));
     }
